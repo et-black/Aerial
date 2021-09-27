@@ -1,45 +1,95 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Paul Rodriguez</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="main">
-					<header id="header">
-						<h1>Paul Rodriguez</h1>
-						<p>Developer &nbsp;&bull;&nbsp; IT Technician </p>
-						<p><b><a href='PR_resume.pdf' download><strong>Download my resume</strong></a></b></p>
-						<nav>
-							<ul>
-								<li><a href="https://github.com/et-black/" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							</ul>
-						</nav>
-					<!--	<p>Some of my work</p>
-						<nav>
-						<ul>
-							<li>Work</li>
-							<li>Example</li>
-							<li>Yea</li>
-						</ul>
-						</nav> -->
-					</header>
-				
-					<footer id="footer">
-						<span>You can message me at: <a href="mailto:paul.rdgz@protonmail.com">paul.rdgz@protonmail.com</a></span>
-					</footer>
+<!DOCTYPE html>
+<html lang="en">
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <title>Paul Rodriguez</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  </div>
+
+<section class="showcase">
+  <header>
+    <h1 class="name noselect">Paul Rodriguez</h1>
+  </header>
+  <div class="text">
+  <h2>ADMINISTRATIVE ASSISTANT</h2>
+    <p>Hello, I'm Paul, I design work systems for both business and personal projects and as a technology enthusiast I continually find methods to automate or facilitate daily tasks.</p>
+  </div>
+
+<ul class="social">
+  <li><a class="myBtn"href="#">Resume</a>
+  <div id="myModal1" class="modal">
+
+  <div class="modal-content-pdf">
+      <span class="close">×</span>
+    <div>
+      <iframe src="PR_resume.pdf#view=FitH" width="100%" height="600px"></iframe>
+    </div>
+  </div>
+
+</div>
+      </li>
+      <li><a class="myBtn"href="#">Contact</a>
+  <div id="myModal2" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Send me an email</h2>
+    </div>
+    <div>
+    
+    <a href = "mailto: paul.rdgz@protonmail.com">paul.rdgz@protonmail.com</a>
+
+  </div>
+
+</div>
+      </li>
+    
+    </ul>
+  </section>
+  <script>
+var modal = document.getElementsByClassName('modal');
+
+var btn = document.getElementsByClassName("myBtn");
+
+
+var span = document.getElementsByClassName("close");
+
+btn[0].onclick = function() {
+    modal[0].style.display = "block";
+}
+
+btn[1].onclick = function() {
+    modal[1].style.display = "block";
+}
+
+span[0].onclick = function() {
+    modal[0].style.display = "none";
+}
+
+span[1].onclick = function() {
+    modal[1].style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal[0]) {
+         modal[0].style.display = "none";
+     }
+    if (event.target == modal[1]) {
+         modal[1].style.display = "none";
+     }  
+     
+    
+    }
+  </script>
+</body>
+
 </html>
